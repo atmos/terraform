@@ -128,4 +128,4 @@ var testAccGithubMembershipConfig string = fmt.Sprintf(`
     username = "%s"
     role = "member"
   }
-`, testUser)
+`, testCollaborator)

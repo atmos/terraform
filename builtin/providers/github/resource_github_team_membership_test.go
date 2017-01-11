@@ -28,7 +28,7 @@ func TestAccGithubTeamMembership_basic(t *testing.T) {
 			username = "%s"
 			role = "maintainer"
 		}
-	`, testUser, testUser)
+	`, testCollaborator, testCollaborator)
 
 	resource.Test(t, resource.TestCase{
 		PreCheck:     func() { testAccPreCheck(t) },
@@ -167,4 +167,4 @@ var testAccGithubTeamMembershipConfig string = fmt.Sprintf(`
     username = "%s"
     role = "member"
   }
-`, testUser, testUser)
+`, testCollaborator, testCollaborator)
